@@ -142,6 +142,20 @@ main {
   margin-bottom: 10px;
 }
 
+/* sponsors section styles  */
+.sponsors {
+  margin-top: 170px;
+  margin-bottom: 130px;
+  text-align: center;
+}
+.sponsors-img img {
+  margin-left: 100px;
+}
+.sponsors-description {
+  margin-top: 24px;
+  margin-bottom: 50px;
+}
+
 /* responsive media queries  */
 @media screen and (max-width: 576px) {
   header {
