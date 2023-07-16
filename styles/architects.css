@@ -2,6 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
 
 /* shared styles  */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+}
+.text-light-gray {
+  color: #727272;
+}
 .btn-primary {
   background-color: #ff900e;
   border-radius: 5px;
@@ -15,10 +23,10 @@
 .btn-primary:hover {
   background-color: #ff5202;
 }
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Work Sans", sans-serif;
+.section-title {
+  color: #131313;
+  font-weight: 700;
+  font-size: 2.8rem;
 }
 
 /* header styles  */
@@ -31,11 +39,7 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-.nav-title {
-  color: #131313;
-  font-weight: 700;
-  font-size: 2.8rem;
-}
+
 nav > ul {
   display: flex;
 }
@@ -108,12 +112,43 @@ main {
   font-weight: 700;
 }
 
+/* facts section styles  */
+.facts {
+  margin: 130px 0;
+}
+.facts-card-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+.facts-card-container .card {
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+  text-align: center;
+  padding: 30px;
+}
+.facts-card-container .card-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+.facts-description {
+  margin-top: 24px;
+  margin-bottom: 100px;
+}
+.facts-card-container .cards-stats {
+  font-size: 2.8rem;
+  color: #424242;
+  margin-bottom: 10px;
+}
+
 /* responsive media queries  */
 @media screen and (max-width: 576px) {
   header {
     padding: 20px;
   }
-  nav {
+  nav,
+  .facts-card-container {
     flex-direction: column;
   }
   .teams-container {
@@ -121,6 +156,14 @@ main {
   }
   .team-img-container {
     grid-template-columns: 1fr;
+  }
+  .teams-content,
+  .facts-card-container,
+  .section-title,
+  .facts-description {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
   }
 }
 
@@ -133,9 +176,11 @@ main {
   .teams-container {
     flex-direction: column;
   }
-  .teams-content {
+  .teams-content,
+  .facts-card-container {
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
+    margin-top: 50px;
   }
 }
