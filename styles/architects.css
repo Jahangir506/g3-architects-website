@@ -162,6 +162,14 @@ main {
   margin-top: 24px;
   margin-bottom: 50px;
 }
+footer {
+  background-color: #fff4e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  text-align: center;
+}
 
 /* responsive media queries  */
 @media screen and (max-width: 576px) {
@@ -182,7 +190,7 @@ main {
   .teams-content,
   .facts-card-container,
   .section-title,
-  .facts-description {
+  .facts-description footer {
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
