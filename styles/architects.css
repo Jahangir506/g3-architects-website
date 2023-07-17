@@ -43,6 +43,12 @@ nav {
 nav > ul {
   display: flex;
 }
+nav > ul > li a:hover {
+  background-color: #ff900e;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
 
 nav li {
   margin-left: 30px;
@@ -272,8 +278,9 @@ footer {
     flex-direction: column-reverse;
   }
   nav > ul {
-    margin-bottom: 20px;
-    margin-right: 30px;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 auto 50px auto;
   }
   .teams-content,
   .facts-card-container,
@@ -294,7 +301,8 @@ footer {
   }
   .ten-years-badge {
     position: static;
-    max-width: 70%;
+    max-width: 700px;
+    padding: 30px 180px;
     margin: 50px auto 0 auto;
   }
   .features-img img {
